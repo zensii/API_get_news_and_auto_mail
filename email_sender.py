@@ -8,10 +8,10 @@ def send_mail(sender, topic, message):
     host = "smtp.gmail.com"
     port = 465
 
-    passkey = os.getenv("GMAIL_APP_PASS")
-    username = "svetlin.sii@gmail.com"
+    passkey = os.getenv("GMAIL_APP_PASS")  # sender password
+    username = "example@gmail.com"  # sender email
 
-    receiver = "svetlin.sii@gmail.com"
+    receiver = "example@gmail.com"  # receiver email
     message_to_send = f'''Subject:{topic}
 from {sender}
 {message}
